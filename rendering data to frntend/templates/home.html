@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <a href="{{ url_for('/')}}">Home Page</a>
+    <a href="{{ url_for('welcome')}}">Welcome Page</a>
+    <a href="{{ url_for('contact')}}">Contact Page</a>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>home Page</h2>
+    <a href="#">home page</a>
+    <a href="#">welcome page</a>
+    <a href="#">contact page</a>
+
+    {% block body %}
+
+    <p>hello,welcome to our confused class for today.</p>
+    {% endblock %}
+</body>
+</html>
