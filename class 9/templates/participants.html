@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+</style>
+<body>
+    <table style="width: 100%;">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>Phone</th>
+        </tr>
+        {% for members in data %}
+        <tr>
+            <td>{{ members[0] }}</td>
+            <td>{{ members[1] }}</td>
+            <td>{{ members[2] }}</td>
+            <td>{{ members[3] }}</td>
+            <td>{{ members[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
